@@ -1,0 +1,24 @@
+.page { padding-bottom: 4rem; }
+
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 2.5rem 0 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.header p {
+  color: var(--gray-400);
+  font-size: 15px;
+}
+
+.content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}

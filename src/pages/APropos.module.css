@@ -1,0 +1,341 @@
+
+.aboutSection {
+  padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+ 
+/* Subtle background texture */
+.aboutSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+ 
+/* Header */
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+ 
+.aboutEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gray-500);
+  margin-bottom: 1rem;
+}
+ 
+.aboutEyebrowLine {
+  width: 28px;
+  height: 1.5px;
+  background: var(--navy);
+  border-radius: 1px;
+}
+ 
+.aboutTitle {
+  font-size: 2.2rem;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+ 
+.aboutSubtitle {
+  font-size: 15px;
+  color: var(--navy);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+ 
+/* Main 2-column grid */
+.aboutGrid {
+  display: flex;
+  flex-direction: justify-content;
+  gap: 2rem;
+  align-items: start;
+  position: relative;
+}
+ 
+/* ── LEFT COLUMN ── */
+.aboutLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+ 
+.aboutBlock {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  transition: background 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+ 
+.aboutBlock:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(26,86,219,0.4);
+}
+ 
+.aboutBlockIcon {
+  width: 40px;
+  height: 40px;
+  background: var(--blue-light);
+  border: 1px solid var(--blue);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+  transition: background 0.25s;
+}
+ 
+.aboutBlock:hover .aboutBlockIcon {
+  background: rgba(26,86,219,0.4);
+}
+ 
+.aboutBlockTitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+ 
+.aboutBlockSub {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--navy);
+}
+ 
+.aboutBlockText {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.75;
+}
+ 
+.aboutBlockText strong {
+  color: var(--navy);
+  font-weight: 600;
+}
+ 
+/* Mission list */
+.missionList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+ 
+.missionList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+ 
+.missionList li svg {
+  color: var(--success);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+ 
+/* Staff grid */
+.staffGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  gap: 0.75rem;
+  margin-top: 4px;
+}
+ 
+.staffItem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+ 
+.staffVal {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--navy);
+  line-height: 1;
+}
+ 
+.staffLabel {
+  font-size: 11px;
+  color: var(--gray-500);
+  line-height: 1.4;
+}
+ 
+.staffBar {
+  height: 3px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+ 
+.staffFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.8s var(--ease);
+}
+ 
+.staffTotal {
+  border-left: 1px solid rgba(255,255,255,0.1);
+  padding-left: 0.75rem;
+}
+ 
+.staffTotal .staffVal {
+  color: var(--blue);
+}
+ 
+/* ── RIGHT COLUMN ── */
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 300px;
+}
+ 
+/* Contact card */
+.contactCard {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+ 
+.contactCardHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--gray-300);
+  background: rgba(26,86,219,0.25);
+}
+ 
+.pdgAvatar {
+  width: 44px;
+  height: 44px;
+  background: var(--blue-light);
+  border-radius: 50%;
+  border: 1.5px solid var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+ 
+.pdgName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.3px;
+}
+ 
+.pdgRole {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+ 
+.contactRows {
+  padding: 0.75rem 0;
+}
+ 
+.contactRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0.65rem 1.5rem;
+  transition: background 0.15s;
+}
+ 
+.contactRow:hover { background: rgba(255,255,255,0.04); }
+ 
+.contactRowIcon {
+  color: var(--blue);
+  flex-shrink: 0;
+  margin-top: 3px;
+  opacity: 0.8;
+}
+ 
+.contactRowBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+ 
+.contactRowLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--navy);
+  font-weight: 500;
+}
+ 
+.contactRowValue {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+ 
+.contactRowLink {
+  color: var(--gray-500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contactRowLink:hover { color: var(--navy); text-decoration: underline; }
+ 
+.contactRowHighlight {
+  color: var(--success);
+  font-weight: 600;
+}
+ 
+.subDirBadge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--gray-500);
+  padding: 0.85rem 1.5rem;
+  border-top: 1px solid var(--gray-300);
+  line-height: 1.5;
+}
+ 
+.subDirBadge svg {
+  flex-shrink: 0;
+  color: var(--gray-500);
+}
+ 
+/* Responsive */
+@media (max-width: 1024px) {
+  .aboutGrid { grid-template-columns: 1fr; }
+  .aboutRight { order: -1; }
+  .staffGrid { grid-template-columns: repeat(2, 1fr); }
+  .staffTotal { border-left: none; padding-left: 0; border-top: 1px solid var(--gray-300); padding-top: 0.5rem; }
+}
+ 
+@media (max-width: 600px) {
+  .aboutTitle { font-size: 1.7rem; }
+  .networkGrid { grid-template-columns: repeat(2, 1fr); }
+  .staffGrid { grid-template-columns: 1fr 1fr; }
+  .aboutSection { padding: 3.5rem 0 3rem; }
+}

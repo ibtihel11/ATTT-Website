@@ -1,0 +1,200 @@
+.page { padding-bottom: 4rem; }
+
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 2.5rem 0 2rem;
+}
+
+.header h1 { font-size: 2rem; color: var(--navy); margin-bottom: 6px; }
+.header p { color: var(--gray-400); font-size: 15px; }
+
+.content {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.article {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.article:hover { box-shadow: var(--shadow-md); }
+
+.articleMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.date { font-size: 12px; color: var(--gray-400); }
+
+.articleTitle {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.5;
+}
+
+.articleBody {
+  font-size: 14px;
+  color: var(--gray-500);
+  line-height: 1.75;
+}
+
+.articleList {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.articleList li {
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--blue-light);
+  color: var(--blue);
+  border: 1px solid var(--blue-mid);
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+
+.downloadBtn:hover { background: var(--blue-mid); }
+/* ── RESSOURCES SECTION ── */
+.resourcesSection {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.resourcesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.resourceCard {
+  background: var(--white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: box-shadow 0.22s var(--ease), border-color 0.22s var(--ease), transform 0.22s var(--ease);
+}
+
+.resourceCard:hover {
+  border-color: var(--blue);
+  box-shadow: 0 4px 20px rgba(26, 86, 219, 0.10);
+  transform: translateY(-2px);
+}
+
+.resourceIconWrap {
+  width: 44px;
+  height: 44px;
+  background: var(--blue-light);
+  border: 1px solid var(--blue-mid);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+  transition: background 0.22s var(--ease), color 0.22s var(--ease);
+}
+
+.resourceCard:hover .resourceIconWrap {
+  background: var(--blue);
+  color: var(--white);
+  border-color: var(--blue);
+}
+
+.resourceTitle {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.resourceDesc {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.65;
+}
+
+.resourceList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--gray-100);
+}
+
+.resourceList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.55;
+}
+
+.resourceList li svg {
+  color: var(--success);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+@media (max-width: 900px) {
+  .resourcesGrid { grid-template-columns: 1fr; }
+}
+.seeAll {
+  background: none;
+  border: none;
+  color: var(--blue);
+  font-size: 14px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 500;
+  border: 1px solid var(--blue);
+  border-radius: var(--radius-md);
+  text-align: center;
+  padding: 6px 12px;
+  width: 50px;
+}
+.SeeAllBtn{
+  display: flex;
+  justify-content: right;
+}
+button.seeAll:hover {
+  background: var(--blue);
+  color: var(--white);
+}
