@@ -135,12 +135,6 @@ src/
 
 ---
 
-## 👤 Authors
-
-This project was developed as part of a UI/UX design course focusing on the redesign and optimization of public-sector digital services in Tunisia.
-
----
-
 ## 📄 License
 
 Academic project — not affiliated with or endorsed by the official ATTT agency.
